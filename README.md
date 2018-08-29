@@ -13,6 +13,7 @@ Then create a Vue.js project
 - (follow vue wizard)
 
 Then create a Truffle project (which we actually will copy the files from into the vue project)
+- (go to /apps)
 - mkdir truffle && pushd truffle
 - truffle init
 - popd
@@ -23,12 +24,14 @@ Some cleanup
 
 Set truffle.js to the following:
 ```    
-development: {
+  networks: {
+    development: {
       host: "ganache-cli",
       port: 8545,
       network_id: "*",
       gas: 4600000
     }
+  }
 ```
 
 Then go into the Vue project and get started

@@ -1,0 +1,2 @@
+Don't keep your actual apps in this repo. Use it as the "container that runs them".
+Best is to clone the apps individually from git into this folder.

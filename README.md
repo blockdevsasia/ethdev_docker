@@ -24,6 +24,9 @@ Some cleanup
 
 Set truffle.js to the following:
 ```    
+module.exports = {
+  // See <http://truffleframework.com/docs/advanced/configuration>
+  // to customize your Truffle configuration!
   networks: {
     development: {
       host: "ganache-cli",
@@ -32,6 +35,7 @@ Set truffle.js to the following:
       gas: 4600000
     }
   }
+};
 ```
 
 Then go into the Vue project and get started

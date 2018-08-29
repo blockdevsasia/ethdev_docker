@@ -1,0 +1,1 @@
+docker-compose logs --follow --tail="10"

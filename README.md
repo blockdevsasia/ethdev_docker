@@ -4,7 +4,7 @@ Development environment for Ethereum using Docker, Vue.JS and Truffle+GanacheCLI
 How to get started:
 - Install Docker / Docker-compose
 - Clone this project
-- Run the build script (./scripts/build.sh)
+- Start the container (docker-compose up -d)
 - Run the start script (./scripts/start.sh)
 - Get a shell in the container (./scripts/shell.sh)
 

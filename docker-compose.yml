@@ -1,19 +1,11 @@
 version: '3'
 services:
-    ganache-cli:
-        build:
-            context: docker/images/ganache-cli
-        command: ["--mnemonic=album arrange height shop soul saddle rib program hour crater jelly cave"]
-        ports:
-            - 127.0.0.1:8545:8545
     truffle-vue:
-        build:
-            context: docker/images/truffle-vue
-        depends_on:
-            - ganache-cli
+        image: coostendorp/truffle-vue:latest
         stdin_open: true
         tty: true
         ports:
             - 8080:8080
         volumes:
             - ./apps/:/apps
+        network_mode: "host"

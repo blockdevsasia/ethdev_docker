@@ -16,6 +16,9 @@ RUN npm install -g @vue/cli && \
     ln -s /usr/local/lib/node_modules/@vue/cli/bin/vue.js vue && \
     npm install -g @vue/cli-service-global
 
+# Install OpenZeppelin
+RUN npm install openzeppelin-solidity
+
 # Install some other tools
 RUN apt-get update && apt-get install -y mc nano
  

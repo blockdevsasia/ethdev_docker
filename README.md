@@ -5,6 +5,12 @@ How to get started:
 - Install Docker / Docker-compose
 - Clone this project
 - Download and install Ganache [https://truffleframework.com/ganache]
+- cd into the project 
+
+```
+cd ethdev_docker
+```
+
 - Start the container (docker-compose up -d)
 - Run the start script (./scripts/start.sh)
 - Get a shell in the container (./scripts/shell.sh)

@@ -50,3 +50,5 @@ Then go into the Vue project and get started
 - serve_start
 - truffle migrate
 
+# Ethereum setup for Debian VM
+https://bit.ly/2qryleP

@@ -50,3 +50,81 @@ Then go into the Vue project and get started
 - serve_start
 - truffle migrate
 
+# Ethereum setup for Debian VM
+Can also be found in:  https://bit.ly/2qryleP
+
+#### NodeJS installation via package manager
+- Check first if Node JS version installed is 8.x
+```
+node --version
+```
+
+- If installed Node JS version is not 8.x, remove NodeJS packages
+```
+sudo apt-get remove nodejs
+```
+
+- Run bash script from source (this script will add the repository link of the latest version supported by the distro)
+```
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+```
+
+- Install NodeJS packages
+```
+sudo apt-get install -y nodejs
+```
+
+- Check if NodeJS is properly installed
+```
+node --version
+```
+
+#### NPM installation
+- Normally, Node JS installation installs NPM
+- Check if NPM version is 4.0.5
+```
+npm --version
+```
+
+- If version is not 4.0.5, reinstall NPM
+```
+sudo npm install npm@4.0.5    
+```
+
+- Check of NPM is properly installed
+```
+npm --version
+```
+
+#### Rebuild Python essential packages
+```
+sudo apt-get install build-essential python
+```
+
+#### Install Truffle
+```
+sudo npm install -g truffle
+```
+
+#### Install Ganache CLI and Web3 JS
+```
+sudo npm install ganache-cli web3@0.20.2
+```
+
+#### To check if Ganache is working properly
+- Go to node_modules
+```
+cd <path where node_modules directory can be found>/node_modules
+```
+
+- Run Ganache local blockchain
+```
+.bin/ganache-cli
+```
+
+- If available accounts and corresponding keys displays, Ganache is working properly 
+
+#### To check of Truffle works properly
+- Go to project root directory
+- Run Truffle local blockchain
+- If available accounts and corresponding keys displays, Truffle is working properly 
